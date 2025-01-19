@@ -239,42 +239,6 @@ footer{
 }
 
 /* Responsive Design */
-
-@media screen and (max-width: 576px){
-    #navbar, .menu-items{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    /* banner style */
-    #banner{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .banner-left{
-        text-align: center;
-    }
-    .add{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-    }
-
-    /* collection style */
-    .cards{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
-    }
-    /* feature style */
-    #feature{
-        flex-direction: column-reverse;
-        gap: 30px;  
-    }
-    .feature-right{
-        text-align: center;
-    }
-}
-
 @media screen and (max-width: 992px){
     #navbar, .menu-items{
         flex-direction: column;
@@ -291,4 +255,34 @@ footer{
     .banner-left{
         text-align: center;
     }
+    /* collection style */
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+    /* feature style */
+    #feature{
+        flex-direction: column-reverse;
+        gap: 30px;  
+    }
+    .feature-right{
+        text-align: center;
+    }
 }
+
+@media screen and (max-width: 576px){
+    
+    .add{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    /* collection style */
+    .cards{
+        grid-template-columns: auto;
+        gap: 30px;
+    }
+    
+}
+
